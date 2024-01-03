@@ -1,0 +1,12 @@
+Compiling files individually:
+-----------------------------
+gcc Main.c -o Main.o -c
+gcc ScoreDisplay.c -o ScoreDisplay.o -c
+gcc -o Application Main.o ScoreDisplay.o
+./Application
+
+Compiling files together:
+-------------------------
+gcc -Wall Main.c ScoreDisplay.c -o Application
+./Application
+
